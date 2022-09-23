@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tripvago</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+    
+  <script src="script.js"></script>
+
+    
+  <!-- https://onaircode.com/html-css-navbar-examples-->
+  <!-- Navbar Code: https://www.w3schools.com/css/css_navbar.asp-->
+	<header class="header">
+		<h1 class="logo"><a href="index.html"><b>Tripvago</b></a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Cities.html">Cities</a></li>
+          <li><a href="Plans.html">Plans</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <!-- add when you know what this if for -->
+      </ul>
+	</header> 
+
+
+
+    
+    <!-- Subscribe To Our News Letter-->
+    <div style="background-color:black;color:white; text-align: center;"><marquee>SUBSCRIBE TO OUR NEWS LETTER FOR MORE INFORMATION AND EXCLUSIVE DEALS</marquee></div>
+
+
+    <!-- Big Hotel Image -->
+    <img src="Images/bookhotels.jpg" alt="BigTriv" style="width: 100%; height: 612px;">
+
+    <br><br><br>
+    
+    
+    <!--Search Bar-->
+  <div id="mySearch" class="search-bar">
+    <input type="text" placeholder="Search.." id="myInput" onclick="showFunction()" onkeyup="filterFunction()">
+  </div>
+  <div id="suggestions" class="options" style="visibility: hidden; display:inline;">
+    <a href="About.html">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="index.html">Home</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="Rome.html">Rome</a>
+  </div>
+<script>
+  document.addEventListener("click", (e) => {
+    closeFunction();
+  });  
+  let counter = 0;
+  const item= document.getElementById("suggestions");
+  const element = document.getElementById("mySearch");
+</script>
+
+
+<br><br><br><br>
+
+    
+<!-- Image Gallery --> <!-- Imformation From Wikipedia -->
+<div class="container">
+  <div class="box">
+    <img src="Images/Rome.jpg">
+    <span>Rome</span>
+    <p>Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale. With 2,860,009 residents in 1,285 km2 (496.1 sq mi), Rome is the country's most populated comune and the third most populous city in the European Union by population within city limits. The Metropolitan City of Rome, with a population of 4,355,725 residents, is the most populous metropolitan city in Italy. Its metropolitan area is the third-most populous within Italy. Rome is located in the central-western portion of the Italian Peninsula, within Lazio (Latium), along the shores of the Tiber. Vatican City (the smallest country in the world) is an independent country inside the city boundaries of Rome, the only existing example of a country within a city. Rome is often referred to as the City of Seven Hills due to its geographic location, and also as the "Eternal City". Rome is generally considered to be the "cradle of Western civilization and Christian culture", and the centre of the Catholic Church.</p>
+  </div>
+  <div class="box">
+    <img src="Images/Paris.jpg">
+    <span>Paris</span>
+    <p>Paris (French pronunciation: ​[paʁi] (listen)) is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019 in an area of more than 105 km² (41 sq mi),[4] making it the 34th most densely populated city in the world in 2020.[5] Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts, and has sometimes been referred to as the capital of the world or "the City of Light".[6] The City of Paris is the centre of the region and province of Île-de-France, or Paris Region, with an estimated population of 12,262,544 in 2019, or about 19% of the population of France.[7] The Paris Region had a GDP of €739 billion ($743 billion) in 2019, which is the highest in Europe.[8] According to the Economist Intelligence Unit Worldwide Cost of Living Survey, in 2021, Paris was the city with the second-highest cost of living in the world, tied with Singapore, and after Tel Aviv.[9] Paris is a major railway, highway, and air-transport hub served by two international airports: Paris–Charles de Gaulle (the second-busiest airport in Europe) and Paris–Orly.[10][11] Opened in 1900, the city's subway system, the Paris Métro, serves 5.23 million passengers daily;[12] it is the second-busiest metro system in Europe after the Moscow Metro.</p>
+  </div>
+  <div class="box">
+    <img src="Images/Dubai.jpg">
+    <span>Dubai</span>
+    <p>Dubai (/duːˈbaɪ/, doo-BY; Arabic: دبي, romanized: Dubayy, IPA: [dʊˈbajj], Gulf Arabic pronunciation: [dəˈbaj]) is the most populated city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai, the most populated of the 7 monarchies which together form the United Arab Emirates. [4][5][6] Established in the 18th century as a small fishing village, the city grew rapidly in the early 21st century with a focus on tourism and luxury,[7] having the second most five-star hotels in the world,[8] and the tallest building in the world, the Burj Khalifa, which is over a half a mile tall.[9]
+
+In the eastern Arabian Peninsula on the coast of the Persian Gulf,[10] it is also a major global transport hub for passengers and cargo.[11] Oil revenue helped accelerate the development of the city, which was already a major mercantile hub. A centre for regional and international trade since the early 20th century, Dubai's economy relies on revenues from trade, tourism, aviation, real estate, and financial services.[12][13][14][15] Oil production contributed less than 1 percent of the emirate's GDP in 2018.[16] The city has a population of around 3.4 million (as of 2021).[17]</p>
+  </div>
+  <div class="box">
+    <img src="Images/London-England.jpg">
+    <span>London</span>
+    <p>London is the capital and largest city of England and the United Kingdom, with a population of just over 9 million.[9] It stands on the River Thames in south-east England at the head of a 50-mile (80 km) estuary down to the North Sea, and has been a major settlement for two millennia.[10] The City of London, its ancient core and financial centre, was founded by the Romans as Londinium and retains boundaries close to its medieval ones.[note 1][11] Since the 19th century,[12] the name "London" has also referred to the metropolis around this core, historically split between the counties of Middlesex, Essex, Surrey, Kent, and Hertfordshire,[13] which largely comprises Greater London,[14] governed by the Greater London Authority.[note 2][15] The City of Westminster, to the west of the City of London, has for centuries hosted the national government and parliament.
+
+As one of the world's major global cities,[16] London exerts a strong influence on its arts, entertainment, fashion, commerce and finance, education, health care, media, science and technology, tourism, and transport and communications.[17][18] Its GDP (€801.66 billion in 2017) makes it the largest urban economy in Europe,[19] and it is one of the major financial centres in the world. As of 2021, London had the most millionaires of any city.</p>
+  </div>
+</div>
+    
+  <!--
+  <h1>What Is Tripvago?</h1>
+    
+  <div class="TripvagoInfo"
+    <p>Tripvago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. This means that while users decide on tripvago which hotel best suits their needs, the booking process itself is completed through the booking sites (which are linked to our website).
+    </p>
+  </div>
+  -->
+    
+    <br><br><br><br><br><br>
+
+    
+    <!-- Hotel Room Image -->
+    <img id="rightImg" src="Images/hotel-img.jpg" alt="hotelroomimage" style="float: right";>
+
+    <!-- Code For Text Beside Hotel Room Image -->
+    <!-- Information From The Actual Trivago Site: trivago.ca-->
+    <h3>Find Cheap Hotels On Tripvago</h3>
+
+    <div class="HotelPicInfo1"
+    <p>With tripvago you can easily find your ideal hotel and compare prices from different websites. Simply enter where you want to go and your desired travel dates, and let our hotel search engine compare accommodation prices for you. To refine your search results, simply filter by price, distance (e.g. from the beach), star category, facilities and more. From budget hostels to luxury suites, tripvago makes it easy to book online. You can search from a large variety of rooms and locations across Canada, like Québec-City and Ottawa to popular cities and holiday destinations abroad!</p> 
+    </div>
+    
+    <h3>Tripvago's Global Hotel Search</h3>
+
+    <div class="HotelPicInfo2"
+    <p>Tripvago’s hotel search allows users to compare hotel prices in just a few clicks from more than 300 booking sites for more than 5.0 million hotels and other types of accommodation in over 190 countries. We help millions of travelers each year compare deals for hotels and accommodations. Get information for weekend trips to cities like Toronto or Vancouver and you can find the right hotel on tripvago quickly and easily. Montreal and its surrounding area are great for trips that are a week or longer with the numerous hotels available.</p>
+    </div>
+      
+    <br><br><br>
+    
+<!-- Evvelope Code 
+<div class="sign-up-container">
+  <div class="envelope">
+    <div class="paper">
+      <h1>Subscribe our Newslatter</h1>
+      <form class="sign-up-form">
+        <input type="text" placeholder="Email" class="text-input"/>
+        <button type="submit" class="button">Sign up</button>
+      </form>
+    </div>
+    <div class="bottom-flap"></div>
+  </div>
+  <div class="thanks-text"> <span>Thanks for subscribing</span></div>
+</div>-->
+
+
+
+
+
+
+
+    
+    <!-- Space Between Footer and Text Shown Above-->  
+    <br><br><br><br><br>
+
+   
+<div class="banner animated tada">
+ <div class=" big-text animated tada">25% OFF</div>
+  <div>ON SELECTED PLANS</div>
+  <a href="Plans.html">Go To Plans</a>
+</div>
+
+
+    
+      
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+
+
+  
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+
+    </div>
+
+      <div class="footer">
+      <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="About.html">About</a>
+        <a href="Cities.html">Cities</a>
+        <a href="Login">Login</a>
+        <a href="#">Shop</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+          <input type="Email" placeholder="Your Email Address" required>
+          <br>
+          <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>CONTACT</h3>
+        <p>123, XYZ ROAD, BSK 3<br>Ontario, Canada, ONT</p>
+      </div>
+    </div>
+    
+  </body>
+</html>
